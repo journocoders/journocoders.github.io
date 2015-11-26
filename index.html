@@ -19,16 +19,15 @@ body {
 <script>
 var can = document.querySelector('canvas');
 var ctx = can.getContext('2d');
-img = new Image();
-img.src = "logo.png";
-img.onload = function() {
-    init();
-};
 can.width = window.innerWidth;
 can.height = window.innerHeight;
 ctx.translate(-1000000,-100000);
 ctx.rotate(-30*Math.PI/180);
-update();
+img = new Image();
+img.src = "logo.png";
+img.onload = function() {
+    update();
+};
 function update(){
     var pattern = ctx.createPattern(img, 'repeat');
     ctx.translate(0,0.5);
