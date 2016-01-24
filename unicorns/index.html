@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Journocoders</title>
+</head>
+<style>
+body {
+    margin: 0;
+    overflow: hidden;
+}
+</style>
+
+<body>
+<canvas></canvas>
+
+<script>
+var can = document.querySelector('canvas');
+var ctx = can.getContext('2d');
+can.width = window.innerWidth;
+can.height = window.innerHeight;
+ctx.translate(-1000000,-100000);
+ctx.rotate(-30*Math.PI/180);
+img = new Image();
+img.src = "logo.png";
+img.onload = function() {
+    update();
+};
+function update(){
+    var pattern = ctx.createPattern(img, 'repeat');
+    ctx.translate(0,0.5);
+    ctx.fillStyle = pattern;
+    ctx.fillRect(0,0,10000000,10000000);
+    window.requestAnimationFrame(update);
+}
+window.addEventListener('resize',function(){
+    can.width = window.innerWidth;
+    can.height = window.innerHeight;
+    ctx.translate(-1000000,-100000);
+    ctx.rotate(-30*Math.PI/180);
+});
+</script>
+
+</body>
+</html>

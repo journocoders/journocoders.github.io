@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+            <header>
+                <img src="img/logo.png" class="logo">
+                <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+                <p>Events for people who like journalism and code.</p>
+            </header>
+     
+                {{ content }}
+
+            <footer>
+                Source for this page is <a href="http://github.com/journocoders/journocoders.github.io">on GitHub</a>.
+            </footer>
+            
+        </div> <!-- /container -->
+        
+        <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+
+    </body>
+</html>
