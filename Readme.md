@@ -1,6 +1,6 @@
 # journocoders.com
 
-This are the source files for [Journocoders.com](http://journocoders.com), a simple website for archiving our past events.
+These are the source files for [Journocoders.com](http://journocoders.com), a simple website for archiving our past events.
 
 ## Adding past events
 
