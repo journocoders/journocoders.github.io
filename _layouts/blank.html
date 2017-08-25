@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<header>
+    <a href="/{% if page.location != 'ldn' %}{{ page.location }}{% endif %}">
+        <img src="{% if page.location == 'ldn' %}/logo.svg{% else %}/logo-{{ page.location }}.svg{% endif %}"/>
+    </a>
+</header>
+<main>
+    {{ content }}
+</main>

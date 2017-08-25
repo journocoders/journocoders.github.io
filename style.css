@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+
+:root {
+    --base: #2b042b;
+    --in-ldn: #4c4b68;
+    --in-mad: #ff5e00;
+}
+
+body {
+    max-width: 980px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 20px 0;
+    color: white;
+    font: 19px Inconsolata, monospace;
+    line-height: 1.8;
+}
+
+.ldn {
+    background: linear-gradient(var(--base), var(--in-ldn));
+}
+
+.mad {
+    background: linear-gradient(var(--base), var(--in-mad));
+}
+
+a {
+    padding: 1px 2px;
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    background: white;
+    border-radius: 2px;
+    color: #212121;
+}
+
+.ldn p a {
+    box-shadow: inset 0 -3px 0 var(--in-ldn);
+}
+
+.mad p a {
+    box-shadow: inset 0 -3px 0 var(--in-mad);
+}
+
+.ldn p a:hover,
+.mad p a:hover {
+    box-shadow: none;
+}
+
+header {
+    margin: 5% auto;
+    text-align: center;
+}
+
+header a {
+    display: inline-block;
+    width: 40%;
+    min-width: 200px;
+    padding: 4px 8px;
+    line-height: 1;
+}
+
+header a:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+header a img {
+    display: block;
+    width: 100%;
+}
+
+main {
+    padding: 0 20px 20px 20px;
+}
+
+p {
+    margin: 20px 0;
+}
+
+main > div:last-of-type {
+    margin-bottom: 40px;
+}
+
+h1 {
+    margin: 20px 0 0 0;
+    font-size: 30px;
+}
+
+h2 {
+    margin: 40px 0 0 0;
+    font-size: 22px;
+}
+
+.join {
+    background: #ed1c40;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+    border-radius: 3px;
+    padding: 0 0 20px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.join span {
+    display: inline-block;
+    margin: 20px 20px 0 20px;
+}
+
+.join a {
+    display: inline-block;
+    background: white;
+    margin: 20px 20px 0 20px;
+    border-radius: 3px;
+    padding: 4px 16px;
+    color: #ed1c40;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.join a:hover {
+    background: #fde7eb;
+    color: #ed1c40;
+}
+
+.past-events {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.event {
+    display: block;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 20px 0;
+    border-radius: 3px;
+    padding: 18px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.event time {
+    float: right;
+    display: block;
+    margin: 3.5px 0;
+    font-size: 14px;
+}
+
+.event h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@media (max-width: 850px) {
+
+    .event time {
+        float: none;
+        margin: 0 0 10px 0;
+    }
+
+}
