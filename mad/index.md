@@ -1,30 +1,30 @@
 ---
 layout: blank
 location: mad
-lang: en
+lang: es
 meetup: madrid-periodismo-de-datos-meetup
 ---
-We help journalists and other people working in the media develop technical skills for use in their reporting.
+Ayudamos a periodistas y a otros profesionales de los medios de comunicación a aprender y a desarrollar conocimientos técnicos para aplicar en su trabajo periodístico. 
 
-That might be data analysis as part of an investigation, scraping data from government websites, building data visualisations to better tell a story, or something else entirely.
+En los talleres de Journocoders podrás aprender procedimientos de análisis de datos para aplicar en una investigación, técnicas para scrapear u obtener datos de la web, o incluso crear tus propias visualizaciones de datos para mejorar el ritmo de una historia. Nos gusta R, Python, Javascript y la línea de comandos.
 
-We run a free meetup in Madrid where we try to learn these skills together. All sessions are appropriate for complete beginners and above.
+Organizamos un meetup en Madrid donde tratamos de enseñar (y aprender) habilidades que combinen el periodismo y la programación. Todas las sesiones son gratuitas y están pensadas tanto para principiantes como para periodistas con una base en programación.
 
 {% include join.html
-    text='Join Journocoders on Meetup and hear about our next event.'
-    button='Join us!'
+    text='Únete a Journocoders en Meetup para estar al tanto del próximo evento'
+    button='Únete!'
 %}
 
-We also tweet from [@journocodersMAD](https://twitter.com/journocodersMAD).
+Puedes estar al tanto de las novedades de Journocoders en [@journocodersMAD](https://twitter.com/journocodersMAD).
 
-Not in Madrid? We are also in [London](/)!
+¿No vives en Madrid? También estamos en [Londres](http://www.journocoders.com/)!
 
 {% include events.html
     filter='Journocoders'
-    next='Next event'
-    also='We are also planning to meet on'
-    past='Past events'
-    more='See more...'
+    next='Próximo evento'
+    also='También estamos planeando encontrarnos en...'
+    past='Encuentros pasados'
+    more='Ver más'
 %}
 
-Organised by [@adrianblancoR](https://twitter.com/adrianblancoR).
+Organizado por [@adrianblancoR](https://twitter.com/adrianblancoR).
