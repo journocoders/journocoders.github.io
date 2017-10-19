@@ -29,7 +29,7 @@ function showNext(meetup, title, alsoText, filter) {
             dates
         ])
         crel(document.querySelector('.next-event-block'), [
-            crel('h2', title),
+            crel('h3', title),
             toBox(events[0]),
             also
         ])
@@ -48,7 +48,7 @@ function showPast(meetup, title, moreText, filter) {
             crel('a', { href: 'https://www.meetup.com/' + meetup + '/events/past' }, moreText)
         ])
         crel(document.querySelector('.past-events-block'), [
-            crel('h2', title),
+            crel('h3', title),
             crel('ol', { 'class': 'past-events' }, items),
             also
         ])

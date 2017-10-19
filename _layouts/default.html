@@ -8,7 +8,7 @@
         <script src="https://unpkg.com/moment/min/moment-with-locales.min.js"></script>
         <script src="https://unpkg.com/crel@3.1.x"></script>
     </head>
-    <body class="{{ page.location }}">
+    <body class="{{ page.location }} {{ page.title | downcase | replace: ' ', '-' }}">
         {{ content }}
     </body>
 </html>
