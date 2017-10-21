@@ -15,7 +15,7 @@ We run a free monthly meetup in London where we try to learn these skills togeth
     button='Join us!'
 %}
 
-We tweet out each meetup from [@journocoders](https://twitter.com/journocoders). There is also a [Slack channel](https://journocoders.slack.com/) you can join -- DM us your email on Twitter to get an invite.
+We tweet out each meetup from [@journocoders](https://twitter.com/journocoders). There is also a [Slack channel](https://journocoders.slack.com/) you can join -- DM us your email address on Twitter to get an invite.
 
 Not in London? We are also in [Madrid](/mad)!
 
