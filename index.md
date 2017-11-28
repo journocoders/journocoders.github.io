@@ -15,9 +15,7 @@ We run a free monthly meetup in London where we try to learn these skills togeth
     button='Join us!'
 %}
 
-We tweet out each meetup from [@journocoders](https://twitter.com/journocoders). There is also a [Slack channel](https://journocoders.slack.com/) you can join -- DM us your email address on Twitter to get an invite.
-
-Not in London? We are also in [Madrid](/mad)!
+We also tweet out each meetup from [@journocoders](https://twitter.com/journocoders).
 
 {% include events.html
     next='Next event'
@@ -25,5 +23,7 @@ Not in London? We are also in [Madrid](/mad)!
     past='Past events'
     more='See more...'
 %}
+
+As well as the meetup we are building [an online Journocoders community on Slack](https://journocoders.slack.com/). It's a space to discuss using code in our reporting, chat about jobs, and help each other out when we get stuck. [Sign up here.](https://bit.ly/journocoders-community-signup)
 
 Organised by [@leilahaddou](https://twitter.com/leilahaddou), [@maxharlow](https://twitter.com/maxharlow), and [@tomwills](https://twitter.com/tomwills).
