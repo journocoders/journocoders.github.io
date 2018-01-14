@@ -26,4 +26,4 @@ We also tweet out each meetup from [@journocoders](https://twitter.com/journocod
 
 As well as the meetup we are building [an online Journocoders community on Slack](https://journocoders.slack.com/). It's a space to discuss using code in our reporting, chat about jobs, and help each other out when we get stuck. [Sign up here.](https://bit.ly/journocoders-community-signup)
 
-Organised by [@leilahaddou](https://twitter.com/leilahaddou), [@maxharlow](https://twitter.com/maxharlow), and [@tomwills](https://twitter.com/tomwills).
+Organised by [@leilahaddou](https://twitter.com/leilahaddou) and [@maxharlow](https://twitter.com/maxharlow).
