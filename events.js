@@ -12,12 +12,14 @@ function run() {
 }
 
 function showNext(meetup, title, alsoText, filter) {
+    const limit = 3
     fetchEvents(meetup, 'upcoming').then(eventsUnfiltered => {
         const events = eventsUnfiltered.filter(event => event.name.includes(filter))
         if (events.length === 0) return
-        const dates = events.slice(1).map((event, i) => {
-            const after = (i === events.length - 3) ? ' & '
-                : (i === events.length - 2) ? '.'
+        const eventsShown = events.slice(1, limit + 1)
+        const dates = eventsShown.map((event, i) => {
+            const after = (i === eventsShown.length - 2) ? ' & '
+                : (i === eventsShown.length - 1) ? '.'
                 : ', '
             return [
                 crel('a', { href: event.link }, toDate(event.time)),
