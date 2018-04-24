@@ -4,7 +4,7 @@ location: mad
 lang: es
 meetup: madrid-periodismo-de-datos-meetup
 ---
-Ayudamos a periodistas y a otros profesionales de los medios de comunicación a aprender y a desarrollar conocimientos técnicos para aplicar en su trabajo periodístico. 
+Ayudamos a periodistas y a otros profesionales de los medios de comunicación a aprender y a desarrollar conocimientos técnicos para aplicar en su trabajo periodístico.
 
 En los talleres de Journocoders podrás aprender procedimientos de análisis de datos para aplicar en una investigación, técnicas para scrapear u obtener datos de la web, o incluso crear tus propias visualizaciones de datos para mejorar el ritmo de una historia. Nos gusta R, Python, Javascript y la línea de comandos.
 
@@ -17,7 +17,7 @@ Organizamos un meetup en Madrid donde tratamos de enseñar (y aprender) habilida
 
 Puedes estar al tanto de las novedades de Journocoders en [@journocodersMAD](https://twitter.com/journocodersMAD).
 
-¿No vives en Madrid? También estamos en [Londres](http://www.journocoders.com/)!
+¿No vives en Madrid? También estamos en [Londres](http://journocoders.com/)!
 
 {% include events.html
     filter='Journocoders'
@@ -27,4 +27,4 @@ Puedes estar al tanto de las novedades de Journocoders en [@journocodersMAD](htt
     more='Ver más'
 %}
 
-Organizado por [@adrianblancoR](https://twitter.com/adrianblancoR).
+Organizado por [@adolflow](https://twitter.com/adolflow).
