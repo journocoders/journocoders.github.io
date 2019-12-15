@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="{{ page.lang }}">
     <head>
-        <title>Journocoders{% if page.location != 'ldn' %} {{ page.location | upcase }}{% endif %}{% if page.title %} {{ page.title }}{% endif %}</title>
+        <title>Journocoders{% if page.title %} {{ page.title }}{% endif %}</title>
         <link rel="stylesheet" href="/style.css"/>
         <meta name="viewport" content="initial-scale=1"/>
         <script src="https://unpkg.com/fetch-jsonp"></script>
         <script src="https://unpkg.com/moment/min/moment-with-locales.min.js"></script>
-        <script src="https://unpkg.com/crel@3.1.x"></script>
+        <script src="https://unpkg.com/crel@4.2.x"></script>
     </head>
-    <body class="{{ page.location }} {{ page.title | downcase | replace: ' ', '-' }}">
+    <body class="{{ page.title | downcase | replace: ' ', '-' }}">
         {{ content }}
     </body>
 </html>

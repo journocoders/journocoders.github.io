@@ -1,21 +1,22 @@
 ---
 layout: blank
-location: ldn
 lang: en
 meetup: journocoders
 ---
-We help journalists and other people working in the media develop technical skills for use in their reporting.
+We are a community group of journalists and others who work in the media, or are planning to in the future.
 
-That might be data analysis as part of an investigation, scraping data from government websites, building data visualisations to better tell a story, or something else entirely.
+Together, we aim to learn and share ✨ technical skills for use in our reporting in a supportive environment.
 
-We run a free monthly meetup in London where we try to learn these skills together. All sessions are appropriate for complete beginners and above.
+That might be 🔎 data analysis as part of an investigation, 💻 scraping data from government websites, 📉 building data visualisations to better tell a story, or something else entirely.
+
+We meet monthly in London to learn and network. All sessions are appropriate for complete beginners and above.
 
 {% include join.html
-    text='Join Journocoders on Meetup and hear about our next event.'
-    button='Join us!'
+    text='Register to hear about our next event 👉'
+    button='Join us'
 %}
 
-We also tweet out each meetup from [@journocoders](https://twitter.com/journocoders).
+You can also follow [@journocoders](https://twitter.com/journocoders) for more on what we're up to.
 
 {% include events.html
     next='Next event'
@@ -24,6 +25,6 @@ We also tweet out each meetup from [@journocoders](https://twitter.com/journocod
     more='See more...'
 %}
 
-As well as the meetup we are building [an online Journocoders community on Slack](https://journocoders.slack.com/). It's a space to discuss using code in our reporting, chat about jobs, and help each other out when we get stuck. [Sign up here.](https://bit.ly/journocoders-community-signup)
+---
 
 Organised by [@leilahaddou](https://twitter.com/leilahaddou) and [@maxharlow](https://twitter.com/maxharlow).

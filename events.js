@@ -67,7 +67,7 @@ function fetchEvents(meetup, status) {
 function toBox(event) {
     return crel('a', { 'class': 'event', href: event.link }, [
         crel('time', toDate(event.time, true)),
-        crel('h3', event.name)
+        crel('h4', event.name)
     ])
 }
 

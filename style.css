@@ -1,69 +1,57 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:600');
 
 :root {
     --base: #2b042b;
-    --in-ldn: #4c4b68;
-    --in-mad: #ff5e00;
+    --tint: #a13d63;
 }
 
 body {
     max-width: 980px;
     min-height: 100vh;
+    background: #f8f8fa;
     margin: 0 auto;
-    padding-top: 20px;
-    color: white;
-    font: 19px Inconsolata, monospace;
-    line-height: 1.8;
-}
-
-.ldn {
-    background: linear-gradient(var(--base), var(--in-ldn));
-}
-
-.mad {
-    background: linear-gradient(var(--base), var(--in-mad));
+    color: var(--base);
+    font: 37px 'Libre Franklin', sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
 }
 
 a {
     padding: 1px 2px;
     color: inherit;
-    text-decoration: none;
+    text-decoration-color: var(--tint);
+    -webkit-text-decoration-color: var(--tint);
 }
 
 a:hover {
-    background: white;
+    color: white;
+    background: var(--tint);
     border-radius: 2px;
-    color: #212121;
 }
 
-.ldn p a {
-    box-shadow: inset 0 -3px 0 var(--in-ldn);
-}
-
-.mad p a {
-    box-shadow: inset 0 -3px 0 var(--in-mad);
-}
-
-.ldn p a:hover,
-.mad p a:hover {
-    box-shadow: none;
+a:active {
+    color: white;
+    background: var(--base);
+    border-radius: 2px;
 }
 
 header {
-    margin: 5% auto;
-    text-align: center;
+    display: block;
+    width: 50%;
+    min-width: 350px;
+    background: var(--base);
+    border-radius: 6px;
+    margin: 10% 20px 5px 20px;
 }
 
 header a {
-    display: inline-block;
-    width: 40%;
-    min-width: 200px;
-    padding: 4px 8px;
-    line-height: 1;
+    display: block;
+    padding: 0;
+    text-decoration: none;
 }
 
 header a:hover {
-    background: rgba(0, 0, 0, 0.2);
+    background: none;
 }
 
 header a img {
@@ -71,12 +59,22 @@ header a img {
     width: 100%;
 }
 
+header span {
+    display: block;
+    padding-bottom: 22px;
+    color: var(--tint);
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 0;
+}
+
 main {
     padding: 0 20px 20px 20px;
 }
 
 p {
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
 main > div:last-of-type {
@@ -98,40 +96,59 @@ h2 {
 }
 
 h3 {
-    margin: 40px 0 0 0;
-    font-size: 22px;
+    margin: 60px 0 0 0;
+    font-size: 24px;
     font-weight: 700;
 }
 
+h4 {
+    margin: 0;
+    font-size: 30px;
+}
+
+hr {
+    margin: 90px 0 0 0;
+    border: none;
+    border-top: 3px solid var(--tint);
+}
+
+progress {
+    appearance: none;
+    -webkit-appearance: none;
+    display: block;
+    width: 6px;
+    height: 60px;
+    margin: 100px auto;
+    border-left: 6px solid white;
+    animation: rotate 1s infinite linear;
+}
+
 .join {
-    background: #ff0051;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    margin: 40px 0;
-    border-radius: 3px;
-    padding: 0 0 20px 0;
-    font-size: 20px;
-    text-align: center;
 }
 
 .join span {
-    display: inline-block;
-    margin: 20px 20px 0 20px;
+    display: inline;
 }
 
 .join a {
     display: inline-block;
-    background: white;
-    margin: 20px 20px 0 20px;
     border-radius: 3px;
+    background: var(--base);
+    margin-left: 5px;
     padding: 4px 16px;
-    color: #ff0051;
+    color: white;
     font-weight: 700;
     text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .join a:hover {
-    background: #fde7eb;
-    color: #ed1c40;
+    background: var(--tint);
+}
+
+.join a:active {
+    background: linear-gradient(135deg, var(--base), var(--tint));
 }
 
 .past-events {
@@ -142,12 +159,23 @@ h3 {
 
 .event {
     display: block;
-    background: rgba(0, 0, 0, 0.4);
     margin: 20px 0;
+    border: 3px solid var(--tint);
     border-radius: 3px;
     padding: 18px 20px;
-    color: white;
     text-decoration: none;
+}
+
+.event:hover {
+    border-color: transparent;
+    background: var(--base);
+    color: white;
+}
+
+.event:hover h4 {
+    text-decoration: underline;
+    text-decoration-color: var(--tint);
+    -webkit-text-decoration-color: var(--tint);
 }
 
 .event time {
@@ -163,7 +191,19 @@ h3 {
     font-weight: 700;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 600px) {
+
+    header {
+        min-width: initial;
+        width: calc(100% - 40px);
+    }
+}
+
+@media (max-width: 800px) {
+
+    body {
+        font-size: 28px;
+    }
 
     .event time {
         float: none;
