@@ -148,7 +148,20 @@ progress {
 }
 
 .join a:active {
-    background: linear-gradient(135deg, var(--base), var(--tint));
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red, violet);
+    background-size: 200% auto;
+    animation: flow 1.5s linear infinite;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 3px black;
+}
+
+@keyframes flow {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 200% 0;
+	}
 }
 
 .past-events {
