@@ -27,4 +27,4 @@ You can also follow [@journocoders](https://twitter.com/journocoders) for more o
 
 ---
 
-Organised by [@maxharlow](https://twitter.com/maxharlow), [@caletilford](https://twitter.com/caletilford), and [@aendra](https://twitter.com/aendra).
+Organised by [Max Harlow](https://twitter.com/maxharlow), [Cale Tilford](https://twitter.com/caletilford), [Anna Lombardi](https://twitter.com/annalom87), [Ryan Watts](https://twitter.com/ryanleewatts), and Cecilia Tombesi.
