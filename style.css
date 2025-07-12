@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:600');
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code&display=swap');
 
 :root {
     --base: #2b042b;
@@ -11,8 +11,7 @@ body {
     background: #f8f8fa;
     margin: 0 auto;
     color: var(--base);
-    font: 37px 'Libre Franklin', sans-serif;
-    font-weight: 600;
+    font: 36px 'Cascadia Code', sans-serif;
     line-height: 1.4;
 }
 
@@ -107,7 +106,7 @@ h4 {
 }
 
 hr {
-    margin: 90px 0 0 0;
+    margin: 0;
     border: none;
     border-top: 3px solid var(--tint);
 }
@@ -141,6 +140,7 @@ progress {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
 }
 
 .join a:hover {
@@ -151,8 +151,13 @@ progress {
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red, violet);
     background-size: 200% auto;
     animation: flow 1.5s linear infinite;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
     text-shadow: 0 0 3px black;
+}
+
+.events {
+    width: 100%;
+    height: 600px;
+    border: none;
 }
 
 @keyframes flow {
@@ -162,46 +167,6 @@ progress {
 	100% {
 		background-position: 200% 0;
 	}
-}
-
-.past-events {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-.event {
-    display: block;
-    margin: 20px 0;
-    border: 3px solid var(--tint);
-    border-radius: 3px;
-    padding: 18px 20px;
-    text-decoration: none;
-}
-
-.event:hover {
-    border-color: transparent;
-    background: var(--base);
-    color: white;
-}
-
-.event:hover h4 {
-    text-decoration: underline;
-    text-decoration-color: var(--tint);
-    -webkit-text-decoration-color: var(--tint);
-}
-
-.event time {
-    float: right;
-    display: block;
-    margin: 3.5px 0;
-    font-size: 14px;
-}
-
-.event h3 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 700;
 }
 
 @media (max-width: 600px) {
@@ -216,11 +181,6 @@ progress {
 
     body {
         font-size: 28px;
-    }
-
-    .event time {
-        float: none;
-        margin: 0 0 10px 0;
     }
 
 }
